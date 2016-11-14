@@ -1,0 +1,32 @@
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="<?php echo $_layoutParams["route_js"]?>/jquery-3.1.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="<?php echo $_layoutParams["route_js"]?>/bootstrap.min.js"></script>
+		<script src="<?php echo $_layoutParams["route_js"]?>/material.min.js"></script>
+		<script src="<?php echo $_layoutParams["route_js"]?>/ripples.min.js"></script>
+		<script src="<?php echo $_layoutParams["route_js"]?>/nouislider.min.js"></script>
+		<script>
+		  $(function () {
+		    $.material.init();
+		    $(".shor").noUiSlider({
+		      start: 40,
+		      connect: "lower",
+		      range: {
+		        min: 0,
+		        max: 100
+		      }
+		    });
+
+		    $(".svert").noUiSlider({
+		      orientation: "vertical",
+		      start: 40,
+		      connect: "lower",
+		      range: {
+		        min: 0,
+		        max: 100
+		      }
+		    });
+		  });
+		</script>
+	</body>
+</html>
